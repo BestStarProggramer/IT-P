@@ -2,11 +2,11 @@ package lab4;
 
 public class CustomAgeException {
     public static void main(String[] args) {
-        String age_raw = "0"; 
+        String age_raw = "23"; 
 
         try {
             int age = Integer.parseInt(age_raw);
-            if (age <= 0 || age > 120 || age != (int) age) {
+            if (age <= 0 || age > 120) {
                 throw new AgeException("type a valid age");
             } else {
                 System.out.println("Age is valid.");

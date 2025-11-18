@@ -1,2 +1,4 @@
 java.lang.NumberFormatException: For input string: "23v"
 lab4.AgeException: type a valid age
+lab4.AgeException: type a valid age
+java.lang.NumberFormatException: For input string: "dsl;fksdlkfn"
