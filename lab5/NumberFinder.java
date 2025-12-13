@@ -7,10 +7,9 @@ public class NumberFinder {
     public static void main(String[] args) {
         Pattern pattern = null;
         try {
-            String text = "The price of the product is $19.99 and the discount is 20%, and my iq is 99";
+            String text = "The price of the product is $19.99 and the discount is -20%, and my iq is 99";
 
-            // Pattern pattern = Pattern.compile("(");
-            pattern = Pattern.compile("\\d+(\\.\\d+)?");
+            pattern = Pattern.compile("(-)?\\d+(\\.\\d+)?");
             Matcher matcher = pattern.matcher(text);
 
             boolean found = false;
