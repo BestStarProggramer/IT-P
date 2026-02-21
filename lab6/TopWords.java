@@ -31,7 +31,7 @@ public class TopWords {
 
         List<Map.Entry<String, Integer>> list = new ArrayList<>(wordCount.entrySet());
 
-        list.sort((o1, o2) -> o2.getValue() - o1.getValue());
+        list.sort((a, b) -> b.getValue() - a.getValue());
 
         int limit = Math.min(10, list.size());
         for (int i = 0; i < limit; i++) {
