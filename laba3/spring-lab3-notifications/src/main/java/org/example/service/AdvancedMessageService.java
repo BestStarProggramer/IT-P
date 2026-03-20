@@ -1,4 +1,6 @@
 package org.example.service;
 
-public class AdvancedMessageService {
+public interface AdvancedMessageService extends MessageService {
+    String getServiceType();
 }
+

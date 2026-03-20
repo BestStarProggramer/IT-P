@@ -1,4 +1,5 @@
 package org.example.service;
 
-public class MessageService {
+public interface MessageService {
+    void sendMessage(String message, String recipient);
 }
